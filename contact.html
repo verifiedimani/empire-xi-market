@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Empire XI - Chat with Admins</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Copy ALL styles from index.html here */
+        /* Same styles as above for consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+        body {
+            background: #0f0719;
+            color: #fff5e6;
+        }
+        .navbar {
+            background: rgba(26, 10, 20, 0.98);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #D4AF37;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #D4AF37, #fff5e6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        .logo span {
+            background: linear-gradient(135deg, #6B2D5C, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #1a0a14;
+            border-top: 4px solid #D4AF37;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 5px;
+            z-index: 1000;
+        }
+        .nav-item {
+            color: #fff5e6;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.9rem;
+            padding: 8px 12px;
+            flex: 1;
+        }
+        .nav-item i {
+            font-size: 1.8rem;
+            color: #D4AF37;
+        }
+        .nav-item.active {
+            background: rgba(212, 175, 55, 0.3);
+            color: #D4AF37;
+        }
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 30px 20px 100px 20px;
+        }
+        .page-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+        .page-title span {
+            color: #D4AF37;
+        }
+        .admins-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .admin-card {
+            background: linear-gradient(145deg, #1a0a14, #2a1522);
+            border: 3px solid #D4AF37;
+            border-radius: 30px;
+            padding: 40px;
+            text-align: center;
+        }
+        .admin-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+        .admin-name {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #D4AF37;
+            margin-bottom: 10px;
+        }
+        .admin-role {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+        .admin-chat {
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 20px 30px;
+            border-radius: 50px;
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border: 2px solid #D4AF37;
+        }
+        .group-section {
+            background: linear-gradient(135deg, #6B2D5C, #2a1522);
+            border: 4px solid #D4AF37;
+            border-radius: 40px;
+            padding: 50px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        .group-btn {
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 25px 50px;
+            border-radius: 60px;
+            font-size: 2rem;
+            display: inline-block;
+            margin: 20px 0;
+            border: 3px solid #D4AF37;
+        }
+        .footer {
+            background: #1a0a14;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 4px solid #D4AF37;
+        }
+        @media (max-width: 768px) {
+            .admins-grid {
+                grid-template-columns: 1fr;
+            }
+            .group-btn {
+                font-size: 1.4rem;
+                padding: 20px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">EMPIRE <span>XI</span></a>
+        <div style="color: #D4AF37;">📞 CONTACT</div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">CONTACT THE <span>EMPIRE</span></h1>
+        <p style="text-align: center; font-size: 1.3rem; margin-bottom: 30px;">Tap any admin below to chat instantly</p>
+
+        <!-- 2 ADMINS -->
+        <div class="admins-grid">
+            <!-- EMPEROR -->
+            <div class="admin-card">
+                <div class="admin-icon">👑</div>
+                <div class="admin-name">EMPEROR</div>
+                <div class="admin-role">Founder & Head Admin</div>
+                <a href="https://wa.me/447467911925?text=Hello%20Emperor!%20I'm%20interested%20in%20EMPIRE%20XI%20services" class="admin-chat" target="_blank">
+                    <i class="fab fa-whatsapp"></i> CHAT NOW
+                </a>
+            </div>
+
+            <!-- GENERAL -->
+            <div class="admin-card">
+                <div class="admin-icon">⚔️</div>
+                <div class="admin-name">GENERAL</div>
+                <div class="admin-role">Senior Commander</div>
+                <a href="https://wa.me/2348105199300?text=Hello%20General!%20I'm%20interested%20in%20EMPIRE%20XI%20services" class="admin-chat" target="_blank">
+                    <i class="fab fa-whatsapp"></i> CHAT NOW
+                </a>
+            </div>
+        </div>
+
+        <!-- GROUP SECTION -->
+        <div class="group-section">
+            <div style="font-size: 4rem; margin-bottom: 20px;">📱</div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">JOIN OUR COMMUNITY</h2>
+            <div style="font-size: 2rem; margin-bottom: 20px; color: #D4AF37;">1,000+ MEMBERS</div>
+            <a href="https://chat.whatsapp.com/LZlbZMvepV6EYFSI4aWHJo" class="group-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> JOIN GROUP
+            </a>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <<!-- BOTTOM NAVIGATION - CONNECTS ALL 9 PAGES -->
+<div class="bottom-nav">
+    <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>HOME</span></a>
+    <a href="shop.html" class="nav-item"><i class="fas fa-store"></i><span>SHOP</span></a>
+    <a href="accounts.html" class="nav-item"><i class="fas fa-trophy"></i><span>ACCOUNTS</span></a>
+    <a href="proofs.html" class="nav-item"><i class="fas fa-scroll"></i><span>PROOFS</span></a>
+    <a href="guides.html" class="nav-item"><i class="fas fa-book"></i><span>GUIDES</span></a>
+    <a href="reviews.html" class="nav-item"><i class="fas fa-star"></i><span>REVIEWS</span></a>
+    <a href="order.html" class="nav-item"><i class="fas fa-gavel"></i><span>ORDER</span></a>
+    <a href="vip.html" class="nav-item"><i class="fas fa-crown"></i><span>VIP</span></a>
+    <a href="https://chat.whatsapp.com/LZlbZMvepV6EYFSI4aWHJo" class="nav-item" target="_blank"><i class="fab fa-whatsapp"></i><span>GROUP</span></a>
+    <a href="contact.html" class="nav-item"><i class="fas fa-phone"></i><span>CONTACT</span></a>
+</div>>
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>HOME</span></a>
+        <a href="shop.html" class="nav-item"><i class="fas fa-store"></i><span>SHOP</span></a>
+        <a href="accounts.html" class="nav-item"><i class="fas fa-trophy"></i><span>ACCOUNTS</span></a>
+        <a href="https://chat.whatsapp.com/LZlbZMvepV6EYFSI4aWHJo" class="nav-item" target="_blank"><i class="fab fa-whatsapp"></i><span>GROUP</span></a>
+        <a href="contact.html" class="nav-item active"><i class="fas fa-phone"></i><span>CONTACT</span></a>
+    </div>
+
+    <footer class="footer">
+        <p>© 2019 Empire XI Market - The Biggest eFootball Empire</p>
+    </footer>
+</body>
+</html>
