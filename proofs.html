@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
@@ -17,7 +18,7 @@
         body {
             background: #0f0719;
             background-image: radial-gradient(circle at 10% 20%, rgba(107, 45, 92, 0.4) 0%, transparent 30%),
-                              radial-gradient(circle at 90% 70%, rgba(212, 175, 55, 0.3) 0%, transparent 40%);
+                radial-gradient(circle at 90% 70%, rgba(212, 175, 55, 0.3) 0%, transparent 40%);
             color: #fff5e6;
             min-height: 100vh;
         }
@@ -62,56 +63,58 @@
 
         /* Bottom Navigation */
         /* SCROLLABLE BOTTOM NAVIGATION - NEW */
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #1a0a14;
-    border-top: 4px solid #D4AF37;
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding: 10px 0;
-    z-index: 1000;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-}
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #1a0a14;
+            border-top: 4px solid #D4AF37;
+            display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding: 10px 0;
+            z-index: 1000;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
 
-.bottom-nav::-webkit-scrollbar {
-    display: none;
-}
+        .bottom-nav::-webkit-scrollbar {
+            display: none;
+        }
 
-.nav-item {
-    color: #fff5e6;
-    text-decoration: none;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 0.8rem;
-    padding: 8px 15px;
-    min-width: 70px;
-    transition: all 0.3s;
-}
+        .nav-item {
+            color: #fff5e6;
+            text-decoration: none;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.8rem;
+            padding: 8px 15px;
+            min-width: 70px;
+            transition: all 0.3s;
+        }
 
-.nav-item i {
-    font-size: 1.5rem;
-    margin-bottom: 4px;
-    color: #D4AF37;
-}
+        .nav-item i {
+            font-size: 1.5rem;
+            margin-bottom: 4px;
+            color: #D4AF37;
+        }
 
-.nav-item:hover {
-    background: rgba(212, 175, 55, 0.2);
-    border-radius: 10px;
-}
+        .nav-item:hover {
+            background: rgba(212, 175, 55, 0.2);
+            border-radius: 10px;
+        }
 
-.nav-item.active {
-    background: rgba(212, 175, 55, 0.3);
-    color: #D4AF37;
-    font-weight: bold;
-    border-radius: 10px;
-} {
+        .nav-item.active {
+            background: rgba(212, 175, 55, 0.3);
+            color: #D4AF37;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+            {
             position: fixed;
             bottom: 0;
             left: 0;
@@ -122,7 +125,7 @@
             justify-content: space-around;
             padding: 10px 5px;
             z-index: 1000;
-            box-shadow: 0 -5px 20px rgba(0,0,0,0.7);
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.7);
         }
 
         .nav-item {
@@ -418,20 +421,20 @@
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .page-title {
                 font-size: 2.2rem;
             }
-            
+
             .testimonials-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .group-join-btn {
                 font-size: 1.3rem;
                 padding: 15px 30px;
             }
-            
+
             .badge {
                 width: 100%;
                 justify-content: center;
@@ -439,6 +442,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -486,6 +490,8 @@
             <!-- Proof 1 -->
             <div class="proof-card">
                 <div class="proof-image">
+                    <img src="images/c37c4c96-dd47-4e14-90f7-dc0238b59448.JPG" alt="Coin Delivery Proof"
+                        style="width: 100%; height: 100%; object-fit: cover;">
                     <span class="proof-type">COINS</span>
                 </div>
                 <div class="proof-content">
@@ -501,6 +507,8 @@
             <!-- Proof 2 -->
             <div class="proof-card">
                 <div class="proof-image">
+                    <img src="images/3d27c4da-a2e0-48ff-8972-e49ba8d4f3c4.JPG" alt="Coin Delivery Proof"
+                        style="width: 100%; height: 100%; object-fit: cover;">
                     <span class="proof-type">ACCOUNT</span>
                 </div>
                 <div class="proof-content">
@@ -516,7 +524,9 @@
             <!-- Proof 3 -->
             <div class="proof-card">
                 <div class="proof-image">
-                    <span class="proof-type">SWAP</span>
+                    <img src="images/292924f8-3e4f-4e5f-9db5-7dbaa9330eeb.JPG" alt="Coin Delivery Proof"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                    <span class="proof-type">ACCOUNT</span>
                 </div>
                 <div class="proof-content">
                     <div class="proof-title"></div>
@@ -531,7 +541,9 @@
             <!-- Proof 4 -->
             <div class="proof-card">
                 <div class="proof-image">
-                    <span class="proof-type">COINS</span>
+                    <img src="images/89e2af1f-fa6a-47bc-b46f-d5a31a1006c5.JPG" alt="Coin Delivery Proof"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                    <span class="proof-type">ACCOUNT</span>
                 </div>
                 <div class="proof-content">
                     <div class="proof-title"></div>
@@ -546,6 +558,8 @@
             <!-- Proof 5 -->
             <div class="proof-card">
                 <div class="proof-image">
+                    <img src="images/3cbd736f-2caf-4b5b-bd7e-cb9f1774ef9b.JPG" alt="Coin Delivery Proof"
+                        style="width: 100%; height: 100%; object-fit: cover;">
                     <span class="proof-type">ACCOUNT</span>
                 </div>
                 <div class="proof-content">
@@ -561,7 +575,9 @@
             <!-- Proof 6 -->
             <div class="proof-card">
                 <div class="proof-image">
-                    <span class="proof-type">SWAP</span>
+                    <img src="images/76e14f4c-15f8-4780-a70b-b0d9d0b0637d.JPG" alt="Coin Delivery Proof"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                    <span class="proof-type">COINS</span>
                 </div>
                 <div class="proof-content">
                     <div class="proof-title"></div>
@@ -576,12 +592,14 @@
 
         <!-- Testimonials -->
         <div class="testimonials-section">
-            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px;">WHAT <span style="color: #D4AF37;">MEMBERS SAY</span></h2>
-            
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px;">WHAT <span
+                    style="color: #D4AF37;">MEMBERS SAY</span></h2>
+
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        Best eFootball trading community I've found. Emperor helped me get a legendary account at a great price. Fast and trustworthy!
+                        Best eFootball trading community I've found. Emperor helped me get a legendary account at a
+                        great price. Fast and trustworthy!
                     </div>
                     <div class="testimonial-author">— Ahmed K.</div>
                     <div class="testimonial-role">Member since 2019</div>
@@ -589,7 +607,8 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        Swapped my account with no issues. General was professional and made sure both parties were satisfied. 10/10 service!
+                        Swapped my account with no issues. General was professional and made sure both parties were
+                        satisfied. 10/10 service!
                     </div>
                     <div class="testimonial-author">— Michael O.</div>
                     <div class="testimonial-role">Member since 2020</div>
@@ -597,7 +616,8 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        Been buying coins here for over a year. Best rates, instant delivery. The group is very active and helpful.
+                        Been buying coins here for over a year. Best rates, instant delivery. The group is very active
+                        and helpful.
                     </div>
                     <div class="testimonial-author">— Raj P.</div>
                     <div class="testimonial-role">Member since 2024</div>
@@ -630,33 +650,38 @@
 
     <!-- Bottom Navigation -->
     <<!-- BOTTOM NAVIGATION - CONNECTS ALL 9 PAGES -->
-<div class="bottom-nav">
-    <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>HOME</span></a>
-    <a href="shop.html" class="nav-item"><i class="fas fa-store"></i><span>SHOP</span></a>
-    <a href="accounts.html" class="nav-item"><i class="fas fa-trophy"></i><span>ACCOUNTS</span></a>
-    <a href="proofs.html" class="nav-item"><i class="fas fa-scroll"></i><span>PROOFS</span></a>
-    <a href="guides.html" class="nav-item"><i class="fas fa-book"></i><span>GUIDES</span></a>
-    <a href="reviews.html" class="nav-item"><i class="fas fa-star"></i><span>REVIEWS</span></a>
-    <a href="order.html" class="nav-item"><i class="fas fa-gavel"></i><span>ORDER</span></a>
-    <a href="vip.html" class="nav-item"><i class="fas fa-crown"></i><span>VIP</span></a>
-    <a href="https://chat.whatsapp.com/LZlbZMvepV6EYFSI4aWHJo" class="nav-item" target="_blank"><i class="fab fa-whatsapp"></i><span>GROUP</span></a>
-    <a href="contact.html" class="nav-item"><i class="fas fa-phone"></i><span>CONTACT</span></a>
-</div>>
+        <div class="bottom-nav">
+            <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>HOME</span></a>
+            <a href="shop.html" class="nav-item"><i class="fas fa-store"></i><span>SHOP</span></a>
+            <a href="accounts.html" class="nav-item"><i class="fas fa-trophy"></i><span>ACCOUNTS</span></a>
+            <a href="proofs.html" class="nav-item"><i class="fas fa-scroll"></i><span>PROOFS</span></a>
+            <a href="guides.html" class="nav-item"><i class="fas fa-book"></i><span>GUIDES</span></a>
+            <a href="reviews.html" class="nav-item"><i class="fas fa-star"></i><span>REVIEWS</span></a>
+            <a href="order.html" class="nav-item"><i class="fas fa-gavel"></i><span>ORDER</span></a>
+            <a href="vip.html" class="nav-item"><i class="fas fa-crown"></i><span>VIP</span></a>
+            <a href="https://chat.whatsapp.com/LZlbZMvepV6EYFSI4aWHJo" class="nav-item" target="_blank"><i
+                    class="fab fa-whatsapp"></i><span>GROUP</span></a>
+            <a href="contact.html" class="nav-item"><i class="fas fa-phone"></i><span>CONTACT</span></a>
+        </div>>
         <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>HOME</span></a>
         <a href="shop.html" class="nav-item"><i class="fas fa-store"></i><span>SHOP</span></a>
         <a href="accounts.html" class="nav-item"><i class="fas fa-trophy"></i><span>ACCOUNTS</span></a>
         <a href="proofs.html" class="nav-item active"><i class="fas fa-scroll"></i><span>PROOFS</span></a>
-        <a href="https://chat.whatsapp.com/LZlbZMvepV6EYFSI4aWHJo" class="nav-item" target="_blank"><i class="fab fa-whatsapp"></i><span>GROUP</span></a>
+        <a href="https://chat.whatsapp.com/LZlbZMvepV6EYFSI4aWHJo" class="nav-item" target="_blank"><i
+                class="fab fa-whatsapp"></i><span>GROUP</span></a>
         <a href="contact.html" class="nav-item"><i class="fas fa-phone"></i><span>CONTACT</span></a>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div style="font-size: 2rem; font-weight: 900; margin-bottom: 20px;">EMPIRE <span style="color: #D4AF37;">XI</span></div>
-        <div style="background: #D4AF37; color: #1a0a14; padding: 10px 20px; border-radius: 40px; display: inline-block; font-weight: bold; margin: 20px 0;">
-            <i class="fas fa-users"></i> 1,000+ MEMBERS
         </div>
-        <p style="margin-top: 20px; color: #999;">© 2019 Empire XI Market. All rights reserved.</p>
-    </footer>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div style="font-size: 2rem; font-weight: 900; margin-bottom: 20px;">EMPIRE <span
+                    style="color: #D4AF37;">XI</span></div>
+            <div
+                style="background: #D4AF37; color: #1a0a14; padding: 10px 20px; border-radius: 40px; display: inline-block; font-weight: bold; margin: 20px 0;">
+                <i class="fas fa-users"></i> 1,000+ MEMBERS
+            </div>
+            <p style="margin-top: 20px; color: #999;">© 2019 Empire XI Market. All rights reserved.</p>
+        </footer>
 </body>
+
 </html>
