@@ -61,7 +61,57 @@
         }
 
         /* Bottom Navigation */
-        .bottom-nav {
+        /* SCROLLABLE BOTTOM NAVIGATION - NEW */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1a0a14;
+    border-top: 4px solid #D4AF37;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.bottom-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-item {
+    color: #fff5e6;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    min-width: 70px;
+    transition: all 0.3s;
+}
+
+.nav-item i {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+    color: #D4AF37;
+}
+
+.nav-item:hover {
+    background: rgba(212, 175, 55, 0.2);
+    border-radius: 10px;
+}
+
+.nav-item.active {
+    background: rgba(212, 175, 55, 0.3);
+    color: #D4AF37;
+    font-weight: bold;
+    border-radius: 10px;
+} {
             position: fixed;
             bottom: 0;
             left: 0;
@@ -425,7 +475,57 @@
                 padding: 15px 30px;
             }
             
-            .bottom-nav {
+            /* SCROLLABLE BOTTOM NAVIGATION - NEW */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1a0a14;
+    border-top: 4px solid #D4AF37;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.bottom-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-item {
+    color: #fff5e6;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    min-width: 70px;
+    transition: all 0.3s;
+}
+
+.nav-item i {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+    color: #D4AF37;
+}
+
+.nav-item:hover {
+    background: rgba(212, 175, 55, 0.2);
+    border-radius: 10px;
+}
+
+.nav-item.active {
+    background: rgba(212, 175, 55, 0.3);
+    color: #D4AF37;
+    font-weight: bold;
+    border-radius: 10px;
+} {
                 flex-wrap: wrap;
                 justify-content: center;
             }
